@@ -1,4 +1,5 @@
 # BluematicCar
+![BMC](https://user-images.githubusercontent.com/100337916/235776820-311161ba-5861-4453-aa55-74db965de5c5.jpg)
 
 Bluematic Car este o aplicație inovatoare și sofisticată dezvoltată pentru a oferi controlul și securizarea optimă a mașinii, cu scopul de a îmbunătăți experiența șoferului și a asigura un nivel ridicat de confort și siguranță. Această aplicație revoluționară integrează o suită impresionantă de funcții și caracteristici care permit gestionarea eficientă a vehiculului, adaptându-se în același timp la nevoile individuale ale utilizatorilor săi.
 
@@ -10,6 +11,5 @@ Una dintre cele mai remarcabile caracteristici ale aplicației Bluematic Car est
 
 Prin combinarea acestor funcții și multe altele, aplicația Bluematic Car redefinește modul în care interacționăm cu mașinile noastre și cum ne bucurăm de experiența de a conduce. Aceasta oferă nu numai un nivel sporit de securitate și confort, dar și un control mai mare asupra mașinii, contribuind la crearea unei legături mai strânse între șofer și vehicul.
 
-![BMC](https://user-images.githubusercontent.com/100337916/235776820-311161ba-5861-4453-aa55-74db965de5c5.jpg)
 
 
