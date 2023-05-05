@@ -98,6 +98,17 @@ void loop()
   while(!(UCSR0A & (1<< RXC0)));
   return UDR0;
 }
+    //releul 1
+  if(data == 'A')
+  {
+    PORTB &= ~(1 << PB1);
+    delay(1000);
+  }
+  else if(data == 'a')
+  {
+    PORTB |= (1 << PB1);    
+  }
+
 
   if(data == password3)
   {
