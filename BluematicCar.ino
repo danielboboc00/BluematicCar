@@ -15,10 +15,6 @@ void UART_TxChar(char ch)
 long int data;
 
 
-// releu portbagaj
-int relay6 = 4;
-long int password8 = 34156469;
-
 // releu de control
 int relay7 = 3;
 
