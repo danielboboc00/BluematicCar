@@ -144,11 +144,12 @@ void loop()
     PORTD |= (1 << PD5);
   }
 
-  if(data == password5)
+  // releul 6
+  if(data == 'f')
   {
-    digitalWrite(relay4, LOW);
+    PORTD &= ~(1 << PD4);
     delay(500);
-    digitalWrite(relay4, HIGH);
+    PORTD |= (1 << PD4);
   }
 
   if(data == password6)
