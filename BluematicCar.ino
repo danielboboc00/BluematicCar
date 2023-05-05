@@ -35,16 +35,13 @@ void setup()
   DDRB |= (1 << DDB1) | (1 << DDB0);
   DDRD |= (1 << DDD7) | (1 << DDD6) | (1 << DDD5) | (1 << DDD4) | (1 << DDD3) | (1 << DDD2);
   PORTB |= ((1 << PB1) | (1 << PB0));
-  PORTD |= (1 << PD7) | (1 << PD6) | (1 << PD5) | (1 << PD4) | (1 << PD3) | (1 << PD2);
+  PORTD |= ((1 << PD7) | (1 << PD6) | (1 << PD5) | (1 << PD4) | (1 << PD3) | (1 << PD2));
  
 }
 
 void loop() 
 {
-  /* Wait for data to be received */
-  while(!(UCSR0A & (1<< RXC0)));
-  return UDR0;
-}
+   data = UART_Receive();
     //releul 1
   if(data == 'A')
   {
