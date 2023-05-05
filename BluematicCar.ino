@@ -16,9 +16,6 @@ long int data;
 
 void setup() 
 { 
-  pinMode(relay3, OUTPUT);
-  digitalWrite(relay3, HIGH);
-  
   pinMode(relay4, OUTPUT);
   digitalWrite(relay4, HIGH);
   
