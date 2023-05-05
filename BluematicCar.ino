@@ -80,6 +80,9 @@ void setup()
 
   Serial.begin(9600);
   BT.begin(9600);
+  
+  // enable the transmission & reception in USART
+  UCSR0B |= (1 << RXEN0) | (1 << TXEN0);
 }
 
 void loop() 
