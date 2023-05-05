@@ -1,5 +1,15 @@
-#include <SoftwareSerial.h>
-SoftwareSerial BT(0, 1);
+unsigned char UART_Receive()
+{
+  while(!(UCSR0A & (1<< RXC0)));
+  return UDR0;
+}
+
+void UART_TxChar(char ch)
+{
+  while(!(UCSR0A &(1 << UDRE0))); 
+  UDR0 = ch;
+}
+
 long int data;
 
 // releu pornire/oprire
