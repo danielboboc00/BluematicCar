@@ -94,6 +94,8 @@ void setup()
   // set the speed of the transmission
   UCSR0A &= ~(1 << U2X0); // high speed mode
   
+  // set the baud rate
+  UBRR0 = 103; // baud rate is 9600
   
 }
 
