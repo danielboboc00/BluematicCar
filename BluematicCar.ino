@@ -116,7 +116,14 @@ void loop()
     delay(700);
     PORTB |= (1 << PB0);
   }
-
+  
+  // releul 3
+  if(data == 'k')
+  {
+    PORTD &= ~(1 << PD7);
+    delay(500);
+    PORTD |= (1 << PD7);
+  }
   if(data == password3)
   {
     digitalWrite(relay2, LOW);
