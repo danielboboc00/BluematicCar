@@ -14,11 +14,6 @@ void UART_TxChar(char ch)
 
 long int data;
 
-// releu pornire/oprire
-int relay1 = 9;
-long int password1 = 98421615;
-long int password2 = 96951628;
-
 // releu start
 int relay2 = 8;
 long int password3 = 74151525;
@@ -104,17 +99,6 @@ void loop()
   return UDR0;
 }
 
-
-  if(data == password1)
-  {
-    digitalWrite(relay1, LOW);
-    delay(1000);
-  }
-  else if(data == password2)
-  {
-    digitalWrite(relay1, HIGH);
-  }
-  
   if(data == password3)
   {
     digitalWrite(relay2, LOW);
