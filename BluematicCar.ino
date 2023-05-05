@@ -14,10 +14,6 @@ void UART_TxChar(char ch)
 
 long int data;
 
-// releu start
-int relay2 = 8;
-long int password3 = 74151525;
-
 // releu inchidere usi
 int relay3 = 7;
 long int password4 = 84515822;
