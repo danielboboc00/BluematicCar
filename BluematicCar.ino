@@ -37,6 +37,19 @@ void setup()
   PORTB |= ((1 << PB1) | (1 << PB0));
   PORTD |= ((1 << PD7) | (1 << PD6));
   
+    // verificare releu de control
+  PORTD &= ~(1 << PD2);
+  delay(500);
+  PORTD |= (1 << PD2);
+  delay(1000);
+  PORTD &= ~(1 << PD2);
+  delay(500);
+  PORTD |= (1 << PD2);
+  delay(1000);
+  PORTD &= ~(1 << PD2);
+  delay(500);
+  PORTD |= (1 << PD2);
+  delay(1000);
 }
 
 void loop() 
