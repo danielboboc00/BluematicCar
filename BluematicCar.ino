@@ -41,8 +41,6 @@ void setup()
 
 void loop() 
 {
-  data = UART_Receive();
-{
   /* Wait for data to be received */
   while(!(UCSR0A & (1<< RXC0)));
   return UDR0;
