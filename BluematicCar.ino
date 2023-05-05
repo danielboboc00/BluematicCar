@@ -62,6 +62,7 @@ void setup()
   // set the baud rate
   UBRR0 = 103; // baud rate is 9600
   
+  DDRB |= (1 << DDB1) | (1 << DDB0);
 }
 
 void loop() 
