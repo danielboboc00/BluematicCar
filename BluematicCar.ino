@@ -1,11 +1,13 @@
 unsigned char UART_Receive()
 {
+  /* Wait for data to be received */
   while(!(UCSR0A & (1<< RXC0)));
   return UDR0;
 }
 
 void UART_TxChar(char ch)
 {
+  /* Wait for empty transmit buffer*/
   while(!(UCSR0A &(1 << UDRE0))); 
   UDR0 = ch;
 }
