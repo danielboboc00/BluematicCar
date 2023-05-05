@@ -15,11 +15,7 @@ void UART_TxChar(char ch)
 long int data;
 
 void setup() 
-{
-  
-  pinMode(relay2, OUTPUT);
-  digitalWrite(relay2, HIGH);
-  
+{ 
   pinMode(relay3, OUTPUT);
   digitalWrite(relay3, HIGH);
   
