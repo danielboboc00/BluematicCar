@@ -59,6 +59,7 @@ void setup()
   UBRR0 = 103; // baud rate is 9600
   
   DDRB |= (1 << DDB1) | (1 << DDB0);
+  DDRD |= (1 << DDD7) | (1 << DDD6) | (1 << DDD5) | (1 << DDD4) | (1 << DDD3) | (1 << DDD2);
 }
 
 void loop() 
