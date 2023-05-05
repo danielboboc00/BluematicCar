@@ -83,6 +83,9 @@ void setup()
   
   // enable the transmission & reception in USART
   UCSR0B |= (1 << RXEN0) | (1 << TXEN0);
+  
+  // set data size for communication
+  UCSR0C &= ((1 << UMSEL00)) & ((1 << UMSEL01)) & ((1 << UPM00)) & ((1 << UPM01)) & (~(1 << USBS0));
 }
 
 void loop() 
