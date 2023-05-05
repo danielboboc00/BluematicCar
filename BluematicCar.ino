@@ -90,6 +90,11 @@ void setup()
   // set data length to be 8 bits
   UCSR0B &= (~(1 << UCSZ02));
   UCSR0C |= (1 << UCSZ00) | (1 << UCSZ01); // 8 bits
+  
+  // set the speed of the transmission
+  UCSR0A &= ~(1 << U2X0); // high speed mode
+  
+  
 }
 
 void loop() 
