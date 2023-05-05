@@ -14,10 +14,6 @@ void UART_TxChar(char ch)
 
 long int data;
 
-
-// releu de control
-int relay7 = 3;
-
 void setup() 
 {
   pinMode(relay1, OUTPUT);
