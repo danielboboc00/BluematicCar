@@ -109,6 +109,13 @@ void loop()
     PORTB |= (1 << PB1);    
   }
 
+  // releul 2 
+  if(data == 'b')
+  {
+    PORTB &= ~(1 << PB0);
+    delay(700);
+    PORTB |= (1 << PB0);
+  }
 
   if(data == password3)
   {
