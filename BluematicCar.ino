@@ -86,6 +86,10 @@ void setup()
   
   // set data size for communication
   UCSR0C &= ((1 << UMSEL00)) & ((1 << UMSEL01)) & ((1 << UPM00)) & ((1 << UPM01)) & (~(1 << USBS0));
+  
+  // set data length to be 8 bits
+  UCSR0B &= (~(1 << UCSZ02));
+  UCSR0C |= (1 << UCSZ00) | (1 << UCSZ01); // 8 bits
 }
 
 void loop() 
