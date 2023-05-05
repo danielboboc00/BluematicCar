@@ -16,20 +16,6 @@ long int data;
 
 void setup() 
 {   
-  pinMode(relay7, OUTPUT);
-  digitalWrite(relay7, HIGH);
-  delay(1000);
-  digitalWrite(relay7, LOW);
-  delay(500);
-  digitalWrite(relay7, HIGH);
-  delay(1000);
-  digitalWrite(relay7, LOW);
-  delay(500);
-  digitalWrite(relay7, HIGH);
-  delay(1000);
-  digitalWrite(relay7, LOW);
-  delay(500);
-  digitalWrite(relay7, HIGH); 
   // enable the transmission & reception in USART
   UCSR0B |= (1 << RXEN0) | (1 << TXEN0);
   
@@ -48,6 +34,7 @@ void setup()
   
   DDRB |= (1 << DDB1) | (1 << DDB0);
   DDRD |= (1 << DDD7) | (1 << DDD6) | (1 << DDD5) | (1 << DDD4) | (1 << DDD3) | (1 << DDD2);
+  PORTB |= (1 << PB1) | (1 << PB0);
 }
 
 void loop() 
