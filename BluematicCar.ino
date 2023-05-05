@@ -76,11 +76,7 @@ void setup()
   delay(1000);
   digitalWrite(relay7, LOW);
   delay(500);
-  digitalWrite(relay7, HIGH);
-
-  Serial.begin(9600);
-  BT.begin(9600);
-  
+  digitalWrite(relay7, HIGH); 
   // enable the transmission & reception in USART
   UCSR0B |= (1 << RXEN0) | (1 << TXEN0);
   
