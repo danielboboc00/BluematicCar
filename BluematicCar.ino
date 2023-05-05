@@ -15,11 +15,6 @@ void UART_TxChar(char ch)
 long int data;
 
 
-
-// releu deshidere usi
-int relay4 = 6;
-long int password5 = 81426337;
-
 // releu aer conditionat on/off
 int relay5 = 5;
 long int password6 = 86741749;
